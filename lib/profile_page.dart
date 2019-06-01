@@ -8,7 +8,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveWidget(
       largeScreen: Scaffold(
-        backgroundColor: Colors.black38,
+        backgroundColor: Colors.black45,
         appBar: AppBar(
           elevation: 0.0,
           backgroundColor: Colors.black,
