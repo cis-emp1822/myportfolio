@@ -8,7 +8,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveWidget(
       largeScreen: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.black38,
         appBar: AppBar(
           elevation: 0.0,
           backgroundColor: Colors.black,
@@ -101,7 +101,7 @@ class PKDot extends StatelessWidget {
     return Row(
       children: <Widget>[
         Text(
-          "PK MTECHVIRAL",
+          "lorem Ipsum",
           textScaleFactor: 2,
           style: TextStyle(
             fontWeight: FontWeight.bold,
@@ -160,10 +160,10 @@ class ProfileInfo extends StatelessWidget {
         decoration: BoxDecoration(
           backgroundBlendMode: BlendMode.luminosity,
           color: Colors.deepOrange,
-//            borderRadius: BorderRadius.circular(40),
+          //  borderRadius: BorderRadius.circular(40),
           shape: BoxShape.circle,
           image: DecorationImage(
-            image: AssetImage("pk.jpg"),
+            image: AssetImage("img_mountains.jpg"),
             alignment: Alignment.center,
             fit: BoxFit.cover,
           ),
@@ -174,13 +174,13 @@ class ProfileInfo extends StatelessWidget {
     crossAxisAlignment: CrossAxisAlignment.start,
     children: <Widget>[
       Text(
-        "Hi there! My name is",
+        "Cross-Platform SDK",
         textScaleFactor: 2,
         style: TextStyle(color: Colors.orange),
       ),
       Text(
-        "Pawan\nKumar",
-        textScaleFactor: 5,
+        "Dart + Flutter",
+        textScaleFactor: 4,
         style: TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold,
@@ -190,9 +190,9 @@ class ProfileInfo extends StatelessWidget {
         height: 10,
       ),
       Text(
-        "A Google Developer Expert for Flutter, Dart & Web Tech.\n"
-        "I am also a youtuber having MTechViral youtube channel\n"
-        "where I make tutorials for technology.",
+        "Flutter is an open-source mobile application development framework created\n"
+        "by Google. It is used to develop applications for Android and iOS, as\n"
+        "well as being the primary method of creating applications for Google Fuchsia.\n" ,
         softWrap: true,
         textScaleFactor: 1.5,
         style: TextStyle(color: Colors.white70),
@@ -205,7 +205,7 @@ class ProfileInfo extends StatelessWidget {
         children: <Widget>[
           RaisedButton(
             shape: StadiumBorder(),
-            child: Text("Resume"),
+            child: Text("Options !"),
             color: Colors.red,
             onPressed: () {},
             padding: EdgeInsets.all(10),
@@ -213,12 +213,9 @@ class ProfileInfo extends StatelessWidget {
           SizedBox(
             width: 20,
           ),
-          OutlineButton(
-            borderSide: BorderSide(
-              color: Colors.red,
-            ),
+          RaisedButton(
             shape: StadiumBorder(),
-            child: Text("Say Hi!"),
+            child: Text("Hello !"),
             color: Colors.red,
             onPressed: () {},
             padding: EdgeInsets.all(10),
@@ -255,6 +252,7 @@ class SocialInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveWidget(
+        
       largeScreen: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -278,22 +276,19 @@ class SocialInfo extends StatelessWidget {
               ),
             ],
           ),
-          Text(
-            "Pawan Kumar ©️2019",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.grey,
-            ),
-          ),
+          
         ],
       ),
-      smallScreen: Column(
+      smallScreen:  Container(
+        color: Colors.blue,
+        child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           NavButton(
             text: "Github",
             onPressed: () {},
             color: Colors.blue,
+            
           ),
           NavButton(
             text: "Twitter",
@@ -305,14 +300,9 @@ class SocialInfo extends StatelessWidget {
             onPressed: () {},
             color: Colors.blue,
           ),
-          Text(
-            "Pawan Kumar ©️2019",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.grey,
-            ),
-          ),
+          
         ],
+      ),
       ),
     );
   }
